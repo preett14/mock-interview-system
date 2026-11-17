@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backend Connection Test</title>
+</head>
+<body>
+  <h2>VoxPrep AI Backend Test</h2>
+  <p id="message">Connecting...</p>
+
+  <script>
+    fetch("http://localhost:5000/api/test")
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("message").innerText = data.message;
+      })
+      .catch(error => {
+        document.getElementById("message").innerText =
+          "Backend Connection Failed!";
+      });
+  </script>
+</body>
+</html>

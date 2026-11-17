@@ -1,0 +1,365 @@
+/* Main Setup Page */
+
+.setup-page {
+  min-height: 100vh;
+  background: #071426;
+  color: #ffffff;
+  font-family: 'Space Grotesk', sans-serif;
+  padding-bottom: 50px;
+}
+
+/* Navbar */
+
+.setup-navbar {
+  height: 85px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: rgba(10, 27, 49, 0.9);
+}
+
+.setup-logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.setup-logo span {
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.setup-logo small {
+  font-size: 11px;
+  padding: 4px 7px;
+  border-radius: 5px;
+  background: #153e60;
+  color: #48d9ee;
+}
+
+.back-btn {
+  padding: 11px 18px;
+  border: 1px solid rgba(80, 190, 255, 0.3);
+  border-radius: 9px;
+  background: transparent;
+  color: #b9dfff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #123b60;
+  border-color: #42d9ff;
+}
+
+/* Main Container */
+
+.setup-container {
+  width: 86%;
+  max-width: 1200px;
+  margin: 45px auto;
+}
+
+/* Heading */
+
+.setup-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.setup-badge {
+  display: inline-block;
+  padding: 9px 17px;
+  border-radius: 30px;
+  background: rgba(44, 187, 225, 0.12);
+  color: #53d9f5;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.setup-heading h1 {
+  font-size: 42px;
+  margin: 22px 0 12px;
+}
+
+.setup-heading h1 span {
+  background: linear-gradient(90deg, #42d9f5, #638aff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.setup-heading p {
+  color: #9aafc7;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Sections */
+
+.setup-section {
+  margin-bottom: 45px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.section-title h2 {
+  font-size: 21px;
+}
+
+.section-title span {
+  color: #7e9ab8;
+  font-size: 13px;
+}
+
+/* Category Cards */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.setup-category {
+  position: relative;
+  text-align: left;
+  padding: 24px;
+  min-height: 165px;
+  border: 1px solid rgba(130, 180, 220, 0.13);
+  border-radius: 15px;
+  background: linear-gradient(145deg, #102b49, #0c2038);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.setup-category:hover {
+  transform: translateY(-4px);
+  border-color: #35c9ee;
+}
+
+.setup-category.selected {
+  border: 1px solid #39d6f5;
+  background: linear-gradient(145deg, #164b70, #102b49);
+  box-shadow: 0 0 22px rgba(42, 194, 240, 0.15);
+}
+
+.category-icon {
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+
+.setup-category h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.setup-category p {
+  color: #9cb4cc;
+  font-size: 12px;
+}
+
+.selected-check {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #37d3ed;
+  color: #071426;
+  font-weight: bold;
+}
+
+/* Difficulty Cards */
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.option-card {
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(130, 180, 220, 0.13);
+  background: #102640;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option-card:hover {
+  border-color: #42c9ef;
+  transform: translateY(-3px);
+}
+
+.option-card.selected {
+  border: 1px solid #3bd7f5;
+  background: #16456a;
+  box-shadow: 0 0 18px rgba(42, 194, 240, 0.15);
+}
+
+.option-card > span {
+  font-size: 27px;
+}
+
+.option-card h3 {
+  margin: 12px 0 7px;
+  font-size: 17px;
+}
+
+.option-card small {
+  color: #a2b7ce;
+  font-size: 12px;
+}
+
+/* Duration */
+
+.duration-options {
+  display: flex;
+  gap: 17px;
+}
+
+.duration-btn {
+  flex: 1;
+  padding: 17px;
+  border: 1px solid rgba(130, 180, 220, 0.15);
+  border-radius: 11px;
+  background: #102640;
+  color: #d8eaff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.duration-btn:hover {
+  border-color: #40d3f3;
+}
+
+.duration-btn.selected {
+  background: #164b70;
+  border-color: #40d3f3;
+  color: #ffffff;
+}
+
+/* Summary */
+
+.setup-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 27px 30px;
+  border-radius: 17px;
+  border: 1px solid rgba(70, 195, 240, 0.25);
+  background: linear-gradient(110deg, #123d60, #174c79);
+}
+
+.setup-summary > div > span {
+  color: #65dafa;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.setup-summary h3 {
+  font-size: 22px;
+  margin: 9px 0;
+}
+
+.setup-summary p {
+  color: #c1d9ee;
+  font-size: 13px;
+}
+
+.start-interview-btn {
+  padding: 16px 25px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #42d8e9, #69a8ff);
+  color: #071426;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start-interview-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 22px rgba(60, 200, 255, 0.25);
+}
+
+.start-interview-btn span {
+  margin-left: 9px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .setup-navbar {
+    padding: 0 5%;
+  }
+
+  .setup-container {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .setup-heading h1 {
+    font-size: 30px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .option-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .duration-options {
+    flex-direction: column;
+  }
+
+  .setup-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .start-interview-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .setup-heading h1 {
+    font-size: 26px;
+  }
+
+  .back-btn {
+    font-size: 11px;
+    padding: 9px;
+  }
+}
