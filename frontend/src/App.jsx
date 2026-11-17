@@ -25,8 +25,8 @@ function App() {
 
   try {
     const url = isSignup
-      ? "http://localhost:5000/api/users/signup"
-      : "http://localhost:5000/api/users/login";
+      ? "https://mock-interview-system-rdyy.onrender.com/api/users/signup"
+      : "https://mock-interview-system-rdyy.onrender.com/api/users/login";
 
     const response = await fetch(url, {
       method: "POST",
